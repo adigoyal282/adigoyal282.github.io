@@ -312,19 +312,14 @@ top: 20%;
 {
 position: absolute;
 left: 5%;
-top: 125%;
+top: 160%;
 
 }
 .card
 {
 display: block;
 }
-#aboutme
-{
-position: absolute;
-top: 110%;
-left: 5%;
-}
+
 
 #usegrid
 {
@@ -334,7 +329,7 @@ grid-template-columns: repeat(2, 1fr);
 {
 position: absolute;
 left: 4%;
-top: 270%;
+top: 320%;
 }
 .use
 {
@@ -356,11 +351,11 @@ border-radius: 15px;
 {
 position: absolute;
 left: 5%;
-top: 450%;
+top: 490%;
 }
 footer
 {
 position: absolute;
-top: 540%;
+top: 580%;
 }.leftnav
-{position: absolute;top: 515%;left: 45%;transform: translate(-50%, 0%);text-align: center;}#usegrid{grid-gap: 0.5em;}.leftnav ul{display: flex;}}
+{position: absolute;top: 555%;left: 45%;transform: translate(-50%, 0%);text-align: center;}#usegrid{grid-gap: 0.5em;}.leftnav ul{display: flex;}}
