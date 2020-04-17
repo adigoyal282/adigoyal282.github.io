@@ -329,19 +329,19 @@ grid-template-columns: repeat(2, 1fr);
 {
 position: absolute;
 left: 4%;
-top: 320%;
+top: 380%;
 }
 .use
 {
-width: 200px;
-height: 125px;
+width: 160px;
+height: 100px;
 }
 .use-overlay
 {
-margin-left: -200px;
+margin-left: -160px;
 position: absolute;
-width: 200px;
-height: 125px;
+width: 160px;
+height: 100px;
 opacity: 0.5;
 transition: .5s ease;
 background:#64FFDA;
@@ -356,6 +356,6 @@ top: 490%;
 footer
 {
 position: absolute;
-top: 580%;
+top: 600%;
 }.leftnav
-{position: absolute;top: 555%;left: 45%;transform: translate(-50%, 0%);text-align: center;}#usegrid{grid-gap: 0.5em;}.leftnav ul{display: flex;}}
+{position: absolute;top: 580%;left: 45%;transform: translate(-50%, 0%);text-align: center;}#usegrid{grid-gap: 0.5em;}.leftnav ul{display: flex;}}
