@@ -113,6 +113,11 @@ color: #64FFDA;
 border: 2px solid #64FFDA;
 transition: 0.4s;
 }
+#navbar-name
+{
+font-family: 'Lobster', cursive;
+color: #64FFDA; font-size: 2em; font-weight: bold;
+}
 #navbar-li
 {
 float: right; 
@@ -158,11 +163,24 @@ margin: auto;
 overflow: auto;
 padding: 0 2rem;
 }
-#navbar-name
-{
-font-family: 'Lobster', cursive;
-color: #64FFDA; font-size: 2em; font-weight: bold;
+
+
+#instaButton{
+    background: none;
+    float: right;
+    margin-right: 2%;
+    margin-top: 0.5%;
+    padding: 5px;
 }
+#instaButton button{
+    font-family: monospace;
+    background-color: #0A192F;
+    border: 2px solid #64FFDA;
+    color: #64FFDA;
+   font-size: 1.5em;
+}
+
+
 .card
 {
 display: grid;
@@ -359,3 +377,6 @@ position: absolute;
 top: 660%;
 }.leftnav
 {position: absolute;top: 640%;left: 45%;transform: translate(-50%, 0%);text-align: center;}#usegrid{grid-gap: 0.5em;}.leftnav ul{display: flex;}}
+#instaButton button{
+    font-size: 1.2em;
+}
