@@ -1,0 +1,129 @@
+body
+{
+background-color:#0A192F;
+margin:0;
+padding: 0;
+font-family: 'Bree serif', serif;
+font-weight: 800;
+}
+header {
+background: #020C1B;
+height: 8vh;
+position: fixed;
+top: 0;
+transition: top 0.2s ease-in-out;
+align-items: center;
+width: 100%;
+z-index: 9999;
+}
+header h4{
+    margin-top: 0;
+    position: relative;
+    left: 14%;
+    color: #64FFDA;
+
+}
+
+#navbar-name
+{
+font-family: 'Lobster', cursive;
+color: #64FFDA; font-size: 4vh; font-weight: bold;
+margin: 3%;
+}
+#instaButton{
+    background: none;
+    float: right;
+    margin-right: 2%;
+    margin-top: 1vh;
+    padding: 5px;
+}
+button{
+    background-color: #0A192F;
+    border: 2px solid #64FFDA;
+    color: #64FFDA;
+   font-size: 3vh;
+}
+.container {
+    display: grid;
+    margin-top: 8vh;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+      "sec1 sec1 sec1 sec2 sec2"
+      "sec3 sec3 sec3 sec3 sec3";
+  }
+.section1
+{
+    grid-area: sec1;
+}
+.section2
+{
+    grid-area: sec2;
+}
+.section3
+{
+    grid-area: sec3;
+}
+label{
+    color: #CCD6F6;
+    font-size: 1.8em;
+    text-align: center;
+    align-items: center;
+    font-family: bold;
+}
+.form{
+    position: relative;
+    left: 40%;
+    top: 30%;
+}
+input{
+    border: none;
+    margin-top: 20px;
+    border-bottom: 2px solid #CCD6F6;
+    padding: 2px;
+    text-align: center;
+    color: #CCD6F6;
+    background: none;
+}
+button{
+    margin-top: 20px;
+    align-items: center;
+}
+.section2 img{
+    position: relative;
+    margin-left: 0;
+    width: 350px;
+    height: 350px;
+}
+.showinfo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #CCD6F6;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 800px)
+{
+    .container{
+    grid-template-areas:
+      "sec1 sec1 sec1 sec1 sec1"
+      "sec2 sec2 sec2 sec2 sec2"
+      "sec3 sec3 sec3 sec3 sec3";
+    }
+    
+    .section2 img{
+        margin-top: 10%;
+        width:300px;
+        height: 300px;
+        margin-left: 10%;
+    }
+    .form{
+        position: relative;
+        align-items: center;
+        left: 20%;
+        top: 20%;
+    }
+    .form button{
+        align-self: center;
+    }
+}
