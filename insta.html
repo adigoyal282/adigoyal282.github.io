@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Customized CSS-->
+    <link rel="stylesheet" href="css/insta_home.css">
+    <!--Lobster Font Family-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!--Vue js CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--Axios CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <!--Pangolin FOnt family-->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+    <meta charset="utf-8">
+    <title>Instagram Spy</title>
+  </head>
+  <body>
+
+ 
+
+    <header id="header">
+      <h4>Zoom Instagram Profile Picture</h4>
+   </header>
+
+   <div class="container" id="app1">
+     <div>
+     <div class="section1">
+       <div class="form" v-if="notSuccess">
+        <label for="username">See Zoomed DP </label>
+        <br>
+        <input type="text" name="username" id="username" placeholder="Enter IG username" v-model="username">
+        <br>
+        <button v-on:click="generateLink(0)">Get Info</button>
+       </div>
+
+       <div class="form showinfo" v-if="success">
+        <h2>{{name}}</h2>
+        <h3>Followers : {{followers}}</h3>
+        <h3>Following : {{following}}</h3>
+       </div>
+
+     </div>
+     <div class="section2">
+        <img v-bind:src="imageLink" alt="Instagram Image">
+     </div>
+    </div>
+
+<!--See folloowers stats-->
+  
+</div>
+
+   <!--JS Inclusion-->
+   <script src="js/profilepic.js"></script>
+  </body>
+</html>
